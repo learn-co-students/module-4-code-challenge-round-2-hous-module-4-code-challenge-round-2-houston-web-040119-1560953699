@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TransactionsList = () => {
+const TransactionsList = (props) => {
 
   return (
     <table className="ui celled striped padded table">
@@ -8,22 +8,26 @@ const TransactionsList = () => {
         <tr>
           <th>
             <h3 className="ui center aligned header">
-              Posted At
+              
+              {props.trans.posted_at}
             </h3>
           </th>
           <th>
             <h3 className="ui center aligned header">
-              Description
+           
+              {props.trans.description}
             </h3>
           </th>
           <th>
             <h3 className="ui center aligned header">
-              Category
+              
+              {props.trans.category}
             </h3>
           </th>
           <th>
             <h3 className="ui center aligned header">
-              Amount
+          
+              {props.trans.amount}
             </h3>
           </th>
         </tr>
